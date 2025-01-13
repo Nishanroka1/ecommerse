@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop - Guitar Shop</title>
+    {% load static %}
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -109,10 +110,10 @@
     <nav>
         <div class="navbar-brand">Guitar Shop</div>
         <div>
-            <a href="index.html">Home</a>
-            <a href="shop.html" class="active">Shop</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
+            <a href="/">Home</a>
+            <a href="/shop" class="active">Shop</a>
+            <a href="/about">About Us</a>
+            <a href="/contact/">Contact</a>
         </div>
     </nav>
 
@@ -123,7 +124,7 @@
             <!-- Product Cards -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="../static/images/acousticguitar.jpg" alt="Acoustic Guitar">
+                    <img src="{% static 'images/acousticguitar.jpg' %}" alt="Acoustic Guitar">
                     <div class="card-body">
                         <h5 class="card-title">Acoustic Guitar</h5>
                         <p class="fw-bold">$299.99</p>
@@ -132,7 +133,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="../static/images/electricguitar.jpg" alt="Electric Guitar">
+                    <img src="{% static 'images/electricguitar.jpg' %}" alt="Electric Guitar">
                     <div class="card-body">
                         <h5 class="card-title">Electric Guitar</h5>
                         <p class="fw-bold">$499.99</p>
@@ -141,7 +142,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="../static/images/bassguitarrr.jpg" alt="Bass Guitar">
+                    <img src="{% static 'images/bassguitarrr.jpg' %}" alt="Bass Guitar">
                     <div class="card-body">
                         <h5 class="card-title">Bass Guitar</h5>
                         <p class="fw-bold">$399.99</p>
