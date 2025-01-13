@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Guitar Shop</title>
+    <style>
+        body {
+            background: url("../static/images/hero.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: #ffcc00;
+            color: black;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            font-size: 0.9rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Guitar Shop</h1>
+        <p>Your one-stop shop for all things guitar.</p>
+    </header>
+
+    <nav>
+        <div class="navbar-brand">Guitar Shop</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="shop">Shop</a>
+            <a href="about">About Us</a>
+            <a href="contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <h2 class="hero-title">Discover Your Sound</h2>
+            <p class="hero-subtitle">Explore our wide collection of guitars, accessories, and more. We’re here to help you find the perfect fit for your musical journey.</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guitar Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

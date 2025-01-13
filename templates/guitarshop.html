@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero is-dark py-5">
+        <div class="hero-body has-text-centered">
+            <h1 class="title">Welcome to the Guitar Shop</h1>
+            <p>Your one-stop shop for all things guitar.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">Guitar Shop</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#">Home</a>
+                    <a class="navbar-item" href="#">Shop</a>
+                    <a class="navbar-item" href="#">About Us</a>
+                    <a class="navbar-item" href="#">Contact</a>
+                    <div class="navbar-item">
+                        <form class="field has-addons">
+                            <p class="control">
+                                <input class="input" type="text" placeholder="Search">
+                            </p>
+                            <p class="control">
+                                <button class="button is-light" type="submit">Search</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">Our Collection</h2>
+            <div class="columns is-multiline">
+                <!-- Product 1 -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="../static/images/acousticguitar.jpg" alt="Acoustic Guitar">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5">Acoustic Guitar</h5>
+                            <p>Perfect for beginners and professionals alike.</p>
+                            <p class="has-text-weight-bold">$299.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="../static/images/electricguitar.jpg" alt="Electric Guitar">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5">Electric Guitar</h5>
+                            <p>Unleash your inner rock star with this beauty.</p>
+                            <p class="has-text-weight-bold">$499.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="../static/images/bassguitarrr.jpg" alt="Bass Guitar">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h5 class="title is-5">Bass Guitar</h5>
+                            <p>Bring the groove to your band with this bass.</p>
+                            <p class="has-text-weight-bold">$399.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <section class="section">
+                <h2 class="title has-text-centered">What Our Customers Say</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <p>"Amazing quality and great service!"</p>
+                            <footer class="has-text-right">— Jane Doe</footer>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <p>"The best place to buy a guitar."</p>
+                            <footer class="has-text-right">— John Smith</footer>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <p>"Highly recommend to all musicians!"</p>
+                            <footer class="has-text-right">— Emily Johnson</footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subscription Section -->
+            <section class="section has-background-light">
+                <div class="container has-text-centered">
+                    <h3 class="title">Subscribe to Our Newsletter</h3>
+                    <form class="columns is-centered">
+                        <div class="column is-narrow">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-narrow">
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-light">
+        <div class="content has-text-centered">
+            <p>&copy; 2025 Guitar Shop. All rights reserved.</p>
+            <p>
+                <a href="#" class="has-text-light">Privacy Policy</a> | 
+                <a href="#" class="has-text-light">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

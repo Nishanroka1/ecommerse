@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Guitar Shop</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="has-background-dark has-text-light py-5">
+        <div class="container has-text-centered">
+            <h1 class="title is-1">Contact Us</h1>
+            <p class="subtitle">We're here to help. Get in touch!</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar has-background-grey-white" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-light" href="#">
+                    Guitar Shop
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-light" href="index.html">Home</a>
+                    <a class="navbar-item has-text-light" href="shop.html">Shop</a>
+                    <a class="navbar-item has-text-light" href="about.html">About Us</a>
+                    <a class="navbar-item has-text-light is-active" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <h2 class="title has-text-centered mb-6">Get in Touch</h2>
+            <form>
+                <div class="field">
+                    <label class="label" for="name">Your Name</label>
+                    <div class="control">
+                        <input class="input" type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="email">Your Email</label>
+                    <div class="control">
+                        <input class="input" type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="message">Your Message</label>
+                    <div class="control">
+                        <textarea class="textarea" id="message" rows="5" placeholder="Write your message" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button type="submit" class="button is-primary">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-light py-5">
+        <div class="content has-text-centered">
+            <p>&copy; 2025 Guitar Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bulma JS for Navbar Burger -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            if (navbarBurgers.length > 0) {
+                navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
